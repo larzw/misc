@@ -15,11 +15,11 @@ $git pull // get updates from github
 
 $git checkout -b // create branch and switch to it
 
-$git checkout a // switch to branch a
+$git checkout b // switch to branch b
 
 $git branch // list branches
 
-$ gith branch -D a // delete brsanch a
+$ gith branch -D b // delete branch b
 
 $ git log // shows commits
 
@@ -29,11 +29,13 @@ $ git log // shows commits
 
 $git fetch origin // update local repo
 
-$git branch -v -a // lists github branches
-
-$git switch -c test origin/test // get the github branch
+$git switch -c test origin/test // get the github branch (look in github for the branch name)
 
 // Now you can push/pull normally
+
+// Delete the branch in github and then locally
+
+$git push --set-upstream origin b // push local branch b to github
 
 # Merge
 
