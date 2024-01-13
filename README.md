@@ -36,6 +36,7 @@ $git switch -c test origin/test // get the github branch (look in github for the
 // Delete the branch in github and then locally
 
 $git push --set-upstream origin b // push local branch b to github
+
 // Only need to do this once, then your can use normal $git push and $git pull
 
 # Merge
