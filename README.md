@@ -48,6 +48,7 @@ $git merge b // this will merge branch b into branch a
 $git merge --abort // abort merge
 
 // fix merge conflicts
+$ git status // files that have merge conflics
 $ git add b.cpp
 $ git commit -m "fixed merge conflict"
 
