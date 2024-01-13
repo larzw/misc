@@ -1,6 +1,7 @@
 # Git
 
 ## basic
+git clone a // bring down repository from github
 
 $git status
 
