@@ -45,6 +45,8 @@ $git checkout a // checkout branch a. This is where you want to merge you code i
 
 $git merge b // this will merge branch b into branch a
 
+$git merge --abort // abort merge
+
 // rebase is an alternative
 
 # rolling back code
