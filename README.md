@@ -115,7 +115,7 @@ $ docker image pull foo:bar // build the image e.g. like the FROM part in the Do
 
 $docker image ls
 
-$docker image rm image_name
+$docker image rm -f image_name
 
 ## docker run
 // run the image that you just built
