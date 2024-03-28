@@ -126,10 +126,6 @@ $docker run -it same_name
 
 $docker run -it same_name sh
 
-// get out of the container will stop it??
-
-$ exit
-
 // run the image that you just built and expose the docker port 3000 to your local machine port 10 e.x. localhost:10
 
 $docker run -p 10:3000 same_name // run the container
@@ -148,7 +144,7 @@ docker ps -a
 
 $docker exec -it the_NAMES_from_docker_ps sh // start a shell session on the detached docker image
 
-// stop a detached container. the 123 is the CONTAINER ID from docker ps
+// stop a container. the 123 is the CONTAINER ID from docker ps. You can also type $exit in the docker container or CTRL + C?
 
 $docker stop 123
 
