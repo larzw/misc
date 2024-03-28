@@ -146,11 +146,11 @@ $docker exec -it the_NAMES_from_docker_ps sh // start a shell session on the det
 
 // stop a container. The 123 is the CONTAINER ID from docker ps. You can also type $exit in the docker container or CTRL + C
 
-$docker stop 123
+$docker stop 123 or docker container stop 123
 
 // start the container
 
-$docker start 123 OR $docker start -i 123 // to start in interactive mode (yes it's just -i)
+$docker start 123 OR $docker start -i 123 // to start in interactive mode (yes it's just -i) or docker container start 123
 
 // remove a container
 
