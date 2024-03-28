@@ -177,6 +177,12 @@ $docker volume rm app-data
 // run the docker container and map the volume app-data to the docker folder /app/data (absolute path)
 $docker run -d -p 10:3000 -v app-data:/app/data some_name
 
+// user absolute paths
+
+// share data between host and docker and it presits
+
+docker run -it -v path_on_host:path_on_container
+
 ## Copy file Docker-> Host and Host->Docker NOTE these commands are issues on the host
 
 //copy file.txt on the CONTAINER ID 123 to your local host "." (current directory)
