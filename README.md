@@ -144,7 +144,7 @@ docker ps -a
 
 $docker exec -it the_NAMES_from_docker_ps sh // start a shell session on the detached docker image
 
-// stop a container. the 123 is the CONTAINER ID from docker ps. You can also type $exit in the docker container or CTRL + C?
+// stop a container. The 123 is the CONTAINER ID from docker ps. You can also type $exit in the docker container or CTRL + C
 
 $docker stop 123
 
