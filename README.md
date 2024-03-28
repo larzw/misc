@@ -134,6 +134,10 @@ $docker run -p 10:3000 same_name // run the container
 
 $docker run -d same_name
 
+$docker run -rm // remove the container after it's stopped
+
+$docker --name container_name image_name
+
 // show running containers
 
 $docker ps OR $docker container ls
