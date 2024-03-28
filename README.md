@@ -83,14 +83,9 @@ then git rest --hard 456 will take you to the state you were in for "456 commit 
 
 # Docker
 
-// install choco
+//install wsl2
 
-Set-ExecutionPolicy Bypass -Scope Process
-
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-// install docker cli
-choco install docker-cli
+//download an install docker desktop
 
 $docker -v // run at command prompt
 
