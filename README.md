@@ -82,25 +82,100 @@ ex.
 then git rest --hard 456 will take you to the state you were in for "456 commit 2"
 
 # Docker
+
 .dockerignore // like .gitignore
 
 // FROM // specify base image
+
 // WORKDIR /app // specify directy you start at when you enter the container (e.x. ~)
+
 // COPY . . // Copy from to (local to container)
+
 // ENV foo=1 // Enviornment variable foo = 1
+
 // EXPOSE 3000 // Expose port 3000 for webapp
+
 // RUN npn i // Run a command at docker build time
+
 // CMD npm start // Run a command in docker (after it's built)
+
 Dockerfile // specify command to create the image
 
 // This will build the image you defined by the Dockerfile
+
 $docker build -t some_name . // cd to where teh Dockerfile is
 
 // shows you images you have e.g. some_name
+
 $docker image ls
 
+## docker run
 // run the image that you just built
-$docker run -it same_name OR $docker run -it same_name sh
 
-// stock the container
-CTRL + C // inside the running docker container
+$docker run -it same_name
+
+// run the image that you just built and go to the shell
+
+$docker run -it same_name sh
+
+// get out of the container interactive mode (it will run in detached mode)
+
+$ exit
+
+// run the image that you just built and expose the docker port 3000 to your local machine port 10 e.x. localhost:10
+
+$docker run -p 10:3000 same_name // run the container
+
+// run in detached mode
+
+$docker run -d same_name
+
+// show running containers that are running
+
+$docker ps
+
+// show stopped and running containers
+
+docker ps -a
+
+$docker exec -it the_NAMES_from_docker_ps sh // start a shell session on the detached docker image
+
+// stop a detached container. the 123 is the CONTAINER ID from docker ps
+
+$docker stop 123
+
+// start the container
+
+$docker start 123
+
+// remove a container
+
+$docker rm 123
+
+## Volumes
+Volumes presist data
+
+// create a docker volume app-data
+
+$docker volume create app-data
+
+// list current volumes
+
+$docker volume ls
+
+// remove docker volume app-data
+$docker volume rm app-data
+
+// run the docker container and map the volume app-data to the docker folder /app/data (absolute path)
+$docker run -d -p 10:3000 -v app-data:/app/data some_name
+
+## Copy file Docker-> Host and Host->Docker NOTE these commands are issues on the host
+
+//copy file.txt on the CONTAINER ID 123 to your local host "." (current directory)
+
+$docker cp 123:app/data/file.txt .
+
+//copy local file foo.txt to CONTAINER 123 and into the docker folder app/data
+
+$docker cp foo.txt 123:app/data/
+
