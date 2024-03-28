@@ -150,7 +150,7 @@ $docker stop 123
 
 // start the container
 
-$docker start 123
+$docker start 123 OR $docker start -i 123 // to start in interactive mode (yes it's just -i)
 
 // remove a container
 
