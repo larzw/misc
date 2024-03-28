@@ -80,3 +80,27 @@ ex.
 789 commit 3
 
 then git rest --hard 456 will take you to the state you were in for "456 commit 2"
+
+# Docker
+.dockerignore // like .gitignore
+
+// FROM // specify base image
+// WORKDIR /app // specify directy you start at when you enter the container (e.x. ~)
+// COPY . . // Copy from to (local to container)
+// ENV foo=1 // Enviornment variable foo = 1
+// EXPOSE 3000 // Expose port 3000 for webapp
+// RUN npn i // Run a command at docker build time
+// CMD npm start // Run a command in docker (after it's built)
+Dockerfile // specify command to create the image
+
+// This will build the image you defined by the Dockerfile
+$docker build -t some_name . // cd to where teh Dockerfile is
+
+// shows you images you have e.g. some_name
+$docker image ls
+
+// run the image that you just built
+$docker run -it same_name OR $docker run -it same_name sh
+
+// stock the container
+CTRL + C // inside the running docker container
