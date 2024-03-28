@@ -103,11 +103,15 @@ Dockerfile // specify command to create the image
 
 // This will build the image you defined by the Dockerfile
 
-$docker build -t some_name . // cd to where teh Dockerfile is
+$docker build -t some_name . // cd to where the Dockerfile is
 
-// shows you images you have e.g. some_name
+$ docker image pull foo:bar // build the image e.g. like the FROM part in the Dockerfile
+
+// shows you images you have built e.g. some_name
 
 $docker image ls
+
+$docker image rm image_name
 
 ## docker run
 // run the image that you just built
@@ -130,9 +134,9 @@ $docker run -p 10:3000 same_name // run the container
 
 $docker run -d same_name
 
-// show running containers that are running
+// show running containers
 
-$docker ps
+$docker ps OR $docker container ls
 
 // show stopped and running containers
 
