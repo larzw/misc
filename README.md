@@ -154,7 +154,7 @@ $docker start 123 OR $docker start -i 123 // to start in interactive mode (yes i
 
 // remove a container
 
-$docker rm 123
+$docker rm 123 or $docker container rm 123
 
 ## Volumes
 Volumes presist data
