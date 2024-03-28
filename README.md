@@ -107,7 +107,7 @@ Dockerfile // specify command to create the image
 
 // This will build the image you defined by the Dockerfile
 
-$docker build -t some_name . // cd to where the Dockerfile is
+$docker build -t some_name . // cd to where the Dockerfile is OR $docker image build -t some_name
 
 $ docker image pull foo:bar // build the image e.g. like the FROM part in the Dockerfile
 
