@@ -83,6 +83,10 @@ then git rest --hard 456 will take you to the state you were in for "456 commit 
 
 # Docker
 
+$docker -v // run at command prompt
+
+$ docker run hello-world // hello world container
+
 .dockerignore // like .gitignore
 
 // FROM // specify base image
@@ -122,7 +126,7 @@ $docker run -it same_name
 
 $docker run -it same_name sh
 
-// get out of the container interactive mode (it will run in detached mode)
+// get out of the container will stop it??
 
 $ exit
 
