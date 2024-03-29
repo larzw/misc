@@ -83,10 +83,6 @@ then git rest --hard 456 will take you to the state you were in for "456 commit 
 
 # Docker
 
-//install wsl2
-
-//download an install docker desktop
-
 $docker -v // run at command prompt
 
 $ docker run hello-world // hello world container
