@@ -90,6 +90,9 @@ $docker -v // run at command prompt
 
 $ docker run hello-world // hello world container
 
+// pulls image but does not run it.
+docker pull foo
+
 .dockerignore // like .gitignore
 
 // FROM // specify base image
