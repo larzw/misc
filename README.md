@@ -23,6 +23,10 @@ $ gith branch -D b // delete branch b
 
 $ git log // shows commits
 
+// remove a commited file
+git rm file1.txt
+git commit -m "remove file1.txt"
+
 # github branches
 
 // If github has a branch test and you want to bring it down localy
