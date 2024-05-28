@@ -29,6 +29,11 @@ git rm file1.txt
 
 git commit -m "remove file1.txt"
 
+//Tags
+
+git tag 0.02
+git push origin --tags
+
 # github branches
 
 // If github has a branch test and you want to bring it down localy
