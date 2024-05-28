@@ -31,9 +31,15 @@ git commit -m "remove file1.txt"
 
 //Tags
 
+Create and push tags
+
 git tag 0.02
 
 git push origin --tags
+
+List tags
+
+git tag
 
 # github branches
 
